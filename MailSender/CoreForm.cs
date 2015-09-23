@@ -18,20 +18,16 @@ namespace Flyman.MailSender
             InitializeComponent();
         }
 
-        public void ShowNotImplementedMessageBox()
-        {
-            MessageBox.Show(@"This function don worked now. Wait new version ;-)", @"Information",
-                MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
+        
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ShowNotImplementedMessageBox();
+            Utils.ShowNotImplementedMessageBox();
         }
 
         private void closeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ShowNotImplementedMessageBox();
+            Utils.ShowNotImplementedMessageBox();
         }
 
         private void fromXlsxToolStripMenuItem_Click(object sender, EventArgs e)
@@ -41,17 +37,17 @@ namespace Flyman.MailSender
 
         private void sendToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ShowNotImplementedMessageBox();
+            Utils.ShowNotImplementedMessageBox();
         }
 
         private void receiveToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ShowNotImplementedMessageBox();
+            Utils.ShowNotImplementedMessageBox();
         }
 
         private void sendToMarkedEmailsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ShowNotImplementedMessageBox();
+            Utils.ShowNotImplementedMessageBox();
         }
 
         private void settingsToolStripMenuItem_Click(object sender, EventArgs e)

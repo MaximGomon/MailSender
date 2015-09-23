@@ -61,7 +61,7 @@ namespace MailSender
 
         private void btRemove_Click(object sender, EventArgs e)
         {
-
+            Utils.ShowNotImplementedMessageBox();
         }
     }
 }

@@ -71,6 +71,7 @@
     </Compile>
     <Compile Include="SmtpInfo.cs" />
     <Compile Include="SystemConfiguration.cs" />
+    <Compile Include="Utils.cs" />
     <EmbeddedResource Include="CoreForm.resx">
       <DependentUpon>CoreForm.cs</DependentUpon>
     </EmbeddedResource>
