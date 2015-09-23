@@ -1,0 +1,1 @@
+D:\Work\MailSender\MailSender\bin\Debug\MailSender.exe.config
