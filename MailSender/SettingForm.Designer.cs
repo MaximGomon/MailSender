@@ -105,8 +105,10 @@
             this.columnHeader4,
             this.columnHeader5});
             this.lvSmtpList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lvSmtpList.FullRowSelect = true;
             this.lvSmtpList.GridLines = true;
             this.lvSmtpList.Location = new System.Drawing.Point(0, 0);
+            this.lvSmtpList.MultiSelect = false;
             this.lvSmtpList.Name = "lvSmtpList";
             this.lvSmtpList.Size = new System.Drawing.Size(545, 390);
             this.lvSmtpList.TabIndex = 0;
