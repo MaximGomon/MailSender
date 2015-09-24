@@ -13,8 +13,6 @@ namespace MailSender
 {
     public partial class SettingForm : Form
     {
-        
-
         public SystemConfiguration Configuration { get; set; }
         public SettingForm()
         {

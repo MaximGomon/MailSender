@@ -136,6 +136,8 @@ namespace Flyman.MailSender
         private void settingsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SettingForm sf = new SettingForm();
+            sf.Configuration = Configuration;
+
             if (sf.ShowDialog() == DialogResult.OK)
             {
                 Configuration = sf.Configuration;
@@ -144,7 +146,7 @@ namespace Flyman.MailSender
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Utils.ShowNotImplementedMessageBox();
         }
 
         private void sendToAllToolStripMenuItem_Click(object sender, EventArgs e)

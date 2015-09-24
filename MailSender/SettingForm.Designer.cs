@@ -62,18 +62,20 @@
             this.tcMain.Controls.Add(this.tpGeneral);
             this.tcMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tcMain.Location = new System.Drawing.Point(0, 0);
+            this.tcMain.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tcMain.Name = "tcMain";
             this.tcMain.SelectedIndex = 0;
-            this.tcMain.Size = new System.Drawing.Size(734, 425);
+            this.tcMain.Size = new System.Drawing.Size(699, 345);
             this.tcMain.TabIndex = 0;
             // 
             // tpSmtp
             // 
             this.tpSmtp.Controls.Add(this.scSmtpSetting);
-            this.tpSmtp.Location = new System.Drawing.Point(4, 25);
+            this.tpSmtp.Location = new System.Drawing.Point(4, 22);
+            this.tpSmtp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tpSmtp.Name = "tpSmtp";
-            this.tpSmtp.Padding = new System.Windows.Forms.Padding(3);
-            this.tpSmtp.Size = new System.Drawing.Size(726, 396);
+            this.tpSmtp.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tpSmtp.Size = new System.Drawing.Size(691, 319);
             this.tpSmtp.TabIndex = 1;
             this.tpSmtp.Text = "SMTP";
             this.tpSmtp.UseVisualStyleBackColor = true;
@@ -81,7 +83,10 @@
             // scSmtpSetting
             // 
             this.scSmtpSetting.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.scSmtpSetting.Location = new System.Drawing.Point(3, 3);
+            this.scSmtpSetting.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
+            this.scSmtpSetting.IsSplitterFixed = true;
+            this.scSmtpSetting.Location = new System.Drawing.Point(2, 2);
+            this.scSmtpSetting.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.scSmtpSetting.Name = "scSmtpSetting";
             // 
             // scSmtpSetting.Panel1
@@ -92,8 +97,9 @@
             // 
             this.scSmtpSetting.Panel2.Controls.Add(this.btRemove);
             this.scSmtpSetting.Panel2.Controls.Add(this.btAdd);
-            this.scSmtpSetting.Size = new System.Drawing.Size(720, 390);
-            this.scSmtpSetting.SplitterDistance = 545;
+            this.scSmtpSetting.Size = new System.Drawing.Size(687, 315);
+            this.scSmtpSetting.SplitterDistance = 556;
+            this.scSmtpSetting.SplitterWidth = 3;
             this.scSmtpSetting.TabIndex = 0;
             // 
             // lvSmtpList
@@ -108,9 +114,10 @@
             this.lvSmtpList.FullRowSelect = true;
             this.lvSmtpList.GridLines = true;
             this.lvSmtpList.Location = new System.Drawing.Point(0, 0);
+            this.lvSmtpList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lvSmtpList.MultiSelect = false;
             this.lvSmtpList.Name = "lvSmtpList";
-            this.lvSmtpList.Size = new System.Drawing.Size(545, 390);
+            this.lvSmtpList.Size = new System.Drawing.Size(556, 315);
             this.lvSmtpList.TabIndex = 0;
             this.lvSmtpList.UseCompatibleStateImageBehavior = false;
             this.lvSmtpList.View = System.Windows.Forms.View.Details;
@@ -118,7 +125,7 @@
             // columnHeader1
             // 
             this.columnHeader1.Text = "Server";
-            this.columnHeader1.Width = 220;
+            this.columnHeader1.Width = 192;
             // 
             // columnHeader2
             // 
@@ -128,7 +135,7 @@
             // columnHeader3
             // 
             this.columnHeader3.Text = "Login";
-            this.columnHeader3.Width = 133;
+            this.columnHeader3.Width = 177;
             // 
             // columnHeader4
             // 
@@ -141,9 +148,10 @@
             // 
             // btRemove
             // 
-            this.btRemove.Location = new System.Drawing.Point(12, 41);
+            this.btRemove.Location = new System.Drawing.Point(9, 33);
+            this.btRemove.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btRemove.Name = "btRemove";
-            this.btRemove.Size = new System.Drawing.Size(138, 23);
+            this.btRemove.Size = new System.Drawing.Size(104, 19);
             this.btRemove.TabIndex = 1;
             this.btRemove.Text = "Remove";
             this.btRemove.UseVisualStyleBackColor = true;
@@ -151,9 +159,10 @@
             // 
             // btAdd
             // 
-            this.btAdd.Location = new System.Drawing.Point(12, 12);
+            this.btAdd.Location = new System.Drawing.Point(9, 10);
+            this.btAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btAdd.Name = "btAdd";
-            this.btAdd.Size = new System.Drawing.Size(138, 23);
+            this.btAdd.Size = new System.Drawing.Size(104, 19);
             this.btAdd.TabIndex = 0;
             this.btAdd.Text = "Add";
             this.btAdd.UseVisualStyleBackColor = true;
@@ -161,10 +170,11 @@
             // 
             // tpGeneral
             // 
-            this.tpGeneral.Location = new System.Drawing.Point(4, 25);
+            this.tpGeneral.Location = new System.Drawing.Point(4, 22);
+            this.tpGeneral.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tpGeneral.Name = "tpGeneral";
-            this.tpGeneral.Padding = new System.Windows.Forms.Padding(3);
-            this.tpGeneral.Size = new System.Drawing.Size(726, 396);
+            this.tpGeneral.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tpGeneral.Size = new System.Drawing.Size(542, 319);
             this.tpGeneral.TabIndex = 0;
             this.tpGeneral.Text = "General";
             this.tpGeneral.UseVisualStyleBackColor = true;
@@ -173,6 +183,7 @@
             // 
             this.scMainContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.scMainContainer.Location = new System.Drawing.Point(0, 0);
+            this.scMainContainer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.scMainContainer.Name = "scMainContainer";
             this.scMainContainer.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -184,16 +195,18 @@
             // 
             this.scMainContainer.Panel2.Controls.Add(this.btCancel);
             this.scMainContainer.Panel2.Controls.Add(this.btOk);
-            this.scMainContainer.Size = new System.Drawing.Size(734, 468);
-            this.scMainContainer.SplitterDistance = 425;
+            this.scMainContainer.Size = new System.Drawing.Size(699, 380);
+            this.scMainContainer.SplitterDistance = 345;
+            this.scMainContainer.SplitterWidth = 3;
             this.scMainContainer.TabIndex = 1;
             // 
             // btCancel
             // 
             this.btCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btCancel.Location = new System.Drawing.Point(384, 7);
+            this.btCancel.Location = new System.Drawing.Point(336, 6);
+            this.btCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btCancel.Name = "btCancel";
-            this.btCancel.Size = new System.Drawing.Size(138, 23);
+            this.btCancel.Size = new System.Drawing.Size(104, 19);
             this.btCancel.TabIndex = 2;
             this.btCancel.Text = "Cancel";
             this.btCancel.UseVisualStyleBackColor = true;
@@ -201,20 +214,22 @@
             // btOk
             // 
             this.btOk.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btOk.Location = new System.Drawing.Point(231, 7);
+            this.btOk.Location = new System.Drawing.Point(221, 6);
+            this.btOk.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btOk.Name = "btOk";
-            this.btOk.Size = new System.Drawing.Size(138, 23);
+            this.btOk.Size = new System.Drawing.Size(104, 19);
             this.btOk.TabIndex = 1;
             this.btOk.Text = "OK";
             this.btOk.UseVisualStyleBackColor = true;
             // 
             // SettingForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(734, 468);
+            this.ClientSize = new System.Drawing.Size(699, 380);
             this.Controls.Add(this.scMainContainer);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "SettingForm";
