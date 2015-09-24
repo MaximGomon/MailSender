@@ -30,7 +30,8 @@ namespace MailSender
                     Password = password,
                     Port = int.Parse(tbPort.Text.Trim()),
                     Server = tbSmptServer.Text.Trim(),
-                    SleepTime = int.Parse(tbSleepTime.Text.Trim())
+                    SleepTime = int.Parse(tbSleepTime.Text.Trim()),
+                    UseSsl = cbUseSsl.Checked
                 };
             }
             set
@@ -41,6 +42,7 @@ namespace MailSender
                 tbPort.Text = value.Port.ToString();
                 tbSmptServer.Text = value.Server;
                 tbSleepTime.Text = value.SleepTime.ToString();
+                cbUseSsl.Checked = value.UseSsl;
             }
         }
         public SmtpForm()

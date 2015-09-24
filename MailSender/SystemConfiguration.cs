@@ -24,12 +24,12 @@ namespace MailSender
 
         public static SystemConfiguration LoadConfiguration()
         {
-            throw new NotImplementedException();
+            return new SystemConfiguration();
         }
 
-        public static SystemConfiguration SaveConfiguration(SystemConfiguration configuration)
+        public static void SaveConfiguration(SystemConfiguration configuration)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
     }
 }

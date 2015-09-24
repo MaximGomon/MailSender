@@ -19,8 +19,10 @@ namespace MailSender
         public SettingForm()
         {
             InitializeComponent();
+            Configuration = SystemConfiguration.LoadConfiguration();
             lvSmtpList.Items.Clear();
             FillSmtpList();
+
         }
         private void FillSmtpList()
         {

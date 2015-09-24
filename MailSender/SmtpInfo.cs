@@ -14,5 +14,6 @@ namespace MailSender
         public string Login { get; set; }
         public string Password { get; set; }
         public int LetterLimit { get; set; }
+        public bool UseSsl { get; set; }
     }
 }

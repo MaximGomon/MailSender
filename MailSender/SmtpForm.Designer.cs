@@ -44,14 +44,16 @@
             this.tbSleepTime = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.cbUseSsl = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // btOk
             // 
             this.btOk.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btOk.Location = new System.Drawing.Point(178, 153);
+            this.btOk.Location = new System.Drawing.Point(135, 150);
+            this.btOk.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btOk.Name = "btOk";
-            this.btOk.Size = new System.Drawing.Size(75, 23);
+            this.btOk.Size = new System.Drawing.Size(56, 19);
             this.btOk.TabIndex = 0;
             this.btOk.Text = "OK";
             this.btOk.UseVisualStyleBackColor = true;
@@ -59,9 +61,10 @@
             // btCancel
             // 
             this.btCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btCancel.Location = new System.Drawing.Point(260, 153);
+            this.btCancel.Location = new System.Drawing.Point(196, 150);
+            this.btCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btCancel.Name = "btCancel";
-            this.btCancel.Size = new System.Drawing.Size(75, 23);
+            this.btCancel.Size = new System.Drawing.Size(56, 19);
             this.btCancel.TabIndex = 1;
             this.btCancel.Text = "Cancel";
             this.btCancel.UseVisualStyleBackColor = true;
@@ -69,107 +72,130 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 26);
+            this.label1.Location = new System.Drawing.Point(9, 21);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 17);
+            this.label1.Size = new System.Drawing.Size(37, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "SMTP";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 55);
+            this.label2.Location = new System.Drawing.Point(9, 45);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(34, 17);
+            this.label2.Size = new System.Drawing.Size(26, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "Port";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 88);
+            this.label3.Location = new System.Drawing.Point(9, 72);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(43, 17);
+            this.label3.Size = new System.Drawing.Size(33, 13);
             this.label3.TabIndex = 4;
             this.label3.Text = "Login";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 122);
+            this.label4.Location = new System.Drawing.Point(9, 99);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(69, 17);
+            this.label4.Size = new System.Drawing.Size(53, 13);
             this.label4.TabIndex = 5;
             this.label4.Text = "Password";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(200, 55);
+            this.label5.Location = new System.Drawing.Point(150, 45);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(73, 17);
+            this.label5.Size = new System.Drawing.Size(54, 13);
             this.label5.TabIndex = 6;
             this.label5.Text = "Letter limit";
             // 
             // tbSmptServer
             // 
-            this.tbSmptServer.Location = new System.Drawing.Point(113, 23);
+            this.tbSmptServer.Location = new System.Drawing.Point(85, 19);
+            this.tbSmptServer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbSmptServer.Name = "tbSmptServer";
-            this.tbSmptServer.Size = new System.Drawing.Size(385, 22);
+            this.tbSmptServer.Size = new System.Drawing.Size(290, 20);
             this.tbSmptServer.TabIndex = 7;
             // 
             // tbPort
             // 
-            this.tbPort.Location = new System.Drawing.Point(113, 52);
+            this.tbPort.Location = new System.Drawing.Point(85, 42);
+            this.tbPort.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbPort.Name = "tbPort";
-            this.tbPort.Size = new System.Drawing.Size(56, 22);
+            this.tbPort.Size = new System.Drawing.Size(43, 20);
             this.tbPort.TabIndex = 8;
             // 
             // tbLimit
             // 
-            this.tbLimit.Location = new System.Drawing.Point(279, 52);
+            this.tbLimit.Location = new System.Drawing.Point(209, 42);
+            this.tbLimit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbLimit.Name = "tbLimit";
-            this.tbLimit.Size = new System.Drawing.Size(56, 22);
+            this.tbLimit.Size = new System.Drawing.Size(43, 20);
             this.tbLimit.TabIndex = 9;
             // 
             // tbLogin
             // 
-            this.tbLogin.Location = new System.Drawing.Point(113, 85);
+            this.tbLogin.Location = new System.Drawing.Point(85, 69);
+            this.tbLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbLogin.Name = "tbLogin";
-            this.tbLogin.Size = new System.Drawing.Size(385, 22);
+            this.tbLogin.Size = new System.Drawing.Size(290, 20);
             this.tbLogin.TabIndex = 10;
             // 
             // tbPassword
             // 
-            this.tbPassword.Location = new System.Drawing.Point(113, 119);
+            this.tbPassword.Location = new System.Drawing.Point(85, 97);
+            this.tbPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.PasswordChar = '*';
-            this.tbPassword.Size = new System.Drawing.Size(385, 22);
+            this.tbPassword.Size = new System.Drawing.Size(290, 20);
             this.tbPassword.TabIndex = 11;
             // 
             // tbSleepTime
             // 
-            this.tbSleepTime.Location = new System.Drawing.Point(442, 52);
+            this.tbSleepTime.Location = new System.Drawing.Point(332, 42);
+            this.tbSleepTime.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbSleepTime.Name = "tbSleepTime";
-            this.tbSleepTime.Size = new System.Drawing.Size(56, 22);
+            this.tbSleepTime.Size = new System.Drawing.Size(43, 20);
             this.tbSleepTime.TabIndex = 13;
             this.toolTip1.SetToolTip(this.tbSleepTime, "Time in second beetwen send letters");
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(363, 55);
+            this.label6.Location = new System.Drawing.Point(272, 45);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(74, 17);
+            this.label6.Size = new System.Drawing.Size(56, 13);
             this.label6.TabIndex = 12;
             this.label6.Text = "Sleep time";
             // 
+            // cbUseSsl
+            // 
+            this.cbUseSsl.AutoSize = true;
+            this.cbUseSsl.Location = new System.Drawing.Point(85, 123);
+            this.cbUseSsl.Name = "cbUseSsl";
+            this.cbUseSsl.Size = new System.Drawing.Size(68, 17);
+            this.cbUseSsl.TabIndex = 14;
+            this.cbUseSsl.Text = "Use SSL";
+            this.cbUseSsl.UseVisualStyleBackColor = true;
+            // 
             // SmtpForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(510, 188);
+            this.ClientSize = new System.Drawing.Size(382, 174);
             this.ControlBox = false;
+            this.Controls.Add(this.cbUseSsl);
             this.Controls.Add(this.tbSleepTime);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.tbPassword);
@@ -184,6 +210,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btCancel);
             this.Controls.Add(this.btOk);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "SmtpForm";
             this.ShowInTaskbar = false;
             this.Text = "Smtp";
@@ -209,5 +236,6 @@
         private System.Windows.Forms.TextBox tbSleepTime;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.CheckBox cbUseSsl;
     }
 }
