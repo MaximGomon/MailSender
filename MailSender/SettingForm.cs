@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,8 @@ namespace MailSender
 {
     public partial class SettingForm : Form
     {
+        
+
         public SystemConfiguration Configuration { get; set; }
         public SettingForm()
         {
@@ -47,6 +50,10 @@ namespace MailSender
             {
                 Text = item.SleepTime.ToString()
             });
+            lvi.SubItems.Add(new ListViewItem.ListViewSubItem
+            {
+                Text = item.Password
+            });
             lvSmtpList.Items.Add(lvi);
         }
 
@@ -55,8 +62,14 @@ namespace MailSender
             SmtpForm sm = new SmtpForm();
             if (sm.ShowDialog() == DialogResult.OK)
             {
+                AddNewSmptServerToConfig(sm.Info);
                 AddItemToListView(sm.Info);
             }
+        }
+
+        private void AddNewSmptServerToConfig(SmtpInfo server)
+        {
+            Configuration.Servers.Add(server);
         }
 
         private void btRemove_Click(object sender, EventArgs e)

@@ -16,9 +16,10 @@ namespace Flyman.MailSender
         public CoreForm()
         {
             InitializeComponent();
+            Configuration = SystemConfiguration.LoadConfiguration();
         }
 
-        
+        public SystemConfiguration Configuration { get; set; }
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -67,6 +68,11 @@ namespace Flyman.MailSender
         private void sendToAllToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void CoreForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            SystemConfiguration.SaveConfiguration(Configuration);
         }
     }
 }

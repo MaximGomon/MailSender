@@ -36,6 +36,7 @@
             this.importToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fromXlsxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.emailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sendToAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sendToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.receiveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sendToMarkedEmailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -48,7 +49,6 @@
             this.lvEmails = new System.Windows.Forms.ListView();
             this.emailColumn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.rtmEmailText = new System.Windows.Forms.RichTextBox();
-            this.sendToAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.spMain)).BeginInit();
@@ -84,14 +84,14 @@
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(120, 26);
             this.openToolStripMenuItem.Text = "Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // closeToolStripMenuItem
             // 
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            this.closeToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(120, 26);
             this.closeToolStripMenuItem.Text = "Close";
             this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
             // 
@@ -106,7 +106,7 @@
             // fromXlsxToolStripMenuItem
             // 
             this.fromXlsxToolStripMenuItem.Name = "fromXlsxToolStripMenuItem";
-            this.fromXlsxToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.fromXlsxToolStripMenuItem.Size = new System.Drawing.Size(146, 26);
             this.fromXlsxToolStripMenuItem.Text = "From xlsx";
             this.fromXlsxToolStripMenuItem.Click += new System.EventHandler(this.fromXlsxToolStripMenuItem_Click);
             // 
@@ -120,6 +120,13 @@
             this.emailToolStripMenuItem.Name = "emailToolStripMenuItem";
             this.emailToolStripMenuItem.Size = new System.Drawing.Size(58, 24);
             this.emailToolStripMenuItem.Text = "Email";
+            // 
+            // sendToAllToolStripMenuItem
+            // 
+            this.sendToAllToolStripMenuItem.Name = "sendToAllToolStripMenuItem";
+            this.sendToAllToolStripMenuItem.Size = new System.Drawing.Size(246, 26);
+            this.sendToAllToolStripMenuItem.Text = "Send to all";
+            this.sendToAllToolStripMenuItem.Click += new System.EventHandler(this.sendToAllToolStripMenuItem_Click);
             // 
             // sendToolStripMenuItem
             // 
@@ -153,7 +160,7 @@
             // settingsToolStripMenuItem
             // 
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(137, 26);
             this.settingsToolStripMenuItem.Text = "Settings";
             this.settingsToolStripMenuItem.Click += new System.EventHandler(this.settingsToolStripMenuItem_Click);
             // 
@@ -226,13 +233,6 @@
             this.rtmEmailText.TabIndex = 0;
             this.rtmEmailText.Text = "";
             // 
-            // sendToAllToolStripMenuItem
-            // 
-            this.sendToAllToolStripMenuItem.Name = "sendToAllToolStripMenuItem";
-            this.sendToAllToolStripMenuItem.Size = new System.Drawing.Size(246, 26);
-            this.sendToAllToolStripMenuItem.Text = "Send to all";
-            this.sendToAllToolStripMenuItem.Click += new System.EventHandler(this.sendToAllToolStripMenuItem_Click);
-            // 
             // CoreForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -245,6 +245,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "CoreForm";
             this.Text = "Mail Sender";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CoreForm_FormClosing);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
